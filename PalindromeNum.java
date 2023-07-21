@@ -16,3 +16,21 @@ Input: x = -121
 Output: false
 Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
 
+class Solution {
+   //Tc : O(n)
+    public boolean isPalindrome(int x)
+    {
+        String xs = Integer.toString(x);
+        int i = 0;
+        int j = xs.length() - 1;
+        while(i <= j)
+        {
+            if(xs.charAt(i) != xs.charAt(j)) return false;
+            i++;
+            j --;
+
+        }
+        return true;
+        
+    }
+}
