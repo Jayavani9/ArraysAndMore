@@ -17,6 +17,7 @@ Input: nums = [1,3,5,6], target = 7
 Output: 4
 
 class Solution {
+    //Tc : O(log n) and Sc: O(1)
     public int searchInsert(int[] nums, int target) {
         int low = 0;
         int high = nums.length-1;
