@@ -10,3 +10,19 @@ Example 2:
 Input: s = "   fly me   to   the moon  "
 Output: 4
 Explanation: The last word is "moon" with length 4.
+
+
+  
+class Solution {
+  //Tc: O(n) where n is the length of the String Sc: O(n)
+    public int lengthOfLastWord(String s) {
+        String[] w = s.split(" ");
+        for(int i = 0 ; i < w.length;i++)
+        {
+        System.out.println(w[i]);
+        }
+        return w[w.length-1].length(); 
+
+        
+    }
+}
