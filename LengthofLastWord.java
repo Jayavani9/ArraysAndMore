@@ -14,7 +14,7 @@ Explanation: The last word is "moon" with length 4.
 
   
 class Solution {
-  //Tc: O(n) where n is the length of the String Sc: O(n)
+  //Tc: O(n+m) where n is the length of the String and m is the loop (no.of words in the input string) ; Sc: O(n)
     public int lengthOfLastWord(String s) {
         String[] w = s.split(" ");
         for(int i = 0 ; i < w.length;i++)
