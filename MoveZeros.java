@@ -11,6 +11,10 @@ Example 2:
 Input: nums = [0]
 Output: [0]
 
+ Example 3:
+Input: [9,0,2,0,7]
+Output: [9,2,7,0,0]
+
 class Solution {
  //Tc: O(n) and Sc: O(1)
     public void moveZeroes(int[] nums) {
