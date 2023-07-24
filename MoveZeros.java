@@ -12,6 +12,7 @@ Input: nums = [0]
 Output: [0]
 
 class Solution {
+ //Tc: O(n) and Sc: O(1)
     public void moveZeroes(int[] nums) {
         int cnt = 0;
         for(int i = 0 ; i < nums.length;i++)
