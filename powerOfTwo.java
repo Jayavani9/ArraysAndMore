@@ -1,8 +1,11 @@
+/*
 class Solution {
     //Tc: O(1) and Sc: O(1)
     //Solution using bitCount 
     //Ex : 8 can be denoted as 2^3 and it takes 1 at 2^3 in the system. So 1 will be the bitCount
     // Thus, if the bitcount is 1, that means it is exactly a power of 2
+*/
+
     public boolean isPowerOfTwo(int n) {
       return n > 0 && Integer.bitCount(n) == 1;
         
