@@ -1,4 +1,4 @@
-
+//String creation and important methods in Java
 public class str{    
 public static void main(String args[]){    
     String s1 = "jaya";                 //Using string literal creating a string
