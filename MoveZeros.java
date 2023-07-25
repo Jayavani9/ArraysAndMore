@@ -1,3 +1,4 @@
+/*
 283. Move Zeroes
 Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 
@@ -18,8 +19,8 @@ Output: [9,2,7,0,0]
  Example 4:
 Input: [6,4,1,0,0]
 Output: [6,4,1,0,0]
+*/
 
- 
 class Solution {
  //Tc: O(n) and Sc: O(1)
     public void moveZeroes(int[] nums) {
