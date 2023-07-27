@@ -30,6 +30,7 @@ Explanation: 3 is represented as 3 ones.
 */
 
 class Solution {
+    // Tc: O(n) and Sc: o(n)
     public String intToRoman(int num) {
                int[] val = {
             1000, 900, 500, 400,
