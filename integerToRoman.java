@@ -59,7 +59,8 @@ class Solution {
             i++;
         }
 
-        return romanNumeral.toString();
+        //return romanNumeral.toString();
+        return romanNumeral;
 
         
     }
