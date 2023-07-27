@@ -45,13 +45,15 @@ class Solution {
             "I"
         };
 
-        StringBuilder romanNumeral = new StringBuilder();
+        //StringBuilder romanNumeral = new StringBuilder();
+        String romanNumeral = new String();
         int i = 0;
 
         while (num > 0) {
             int count = num / val[i];
             for (int j = 0; j < count; j++) {
-                romanNumeral.append(syms[i]);
+                //romanNumeral.append(syms[i]);
+                romanNumeral = romanNumeral.concat(syms[i]);
                 num -= val[i];
             }
             i++;
