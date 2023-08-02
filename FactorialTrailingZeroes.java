@@ -15,6 +15,7 @@ Output: 1
 Explanation: 5! = 120, one trailing zero.
 
   class Solution {
+  //Tc: O(n) and Sc:O(1)
     public int trailingZeroes(int n) {
          int cnt = 0;
 
