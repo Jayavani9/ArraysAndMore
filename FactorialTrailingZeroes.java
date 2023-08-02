@@ -13,3 +13,16 @@ Example 2:
 Input: n = 5
 Output: 1
 Explanation: 5! = 120, one trailing zero.
+
+  class Solution {
+    public int trailingZeroes(int n) {
+         int cnt = 0;
+
+        while (n >= 5) {
+            n /= 5;
+            cnt += n;
+        }
+
+        return cnt;
+    }
+}
