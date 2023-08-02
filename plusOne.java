@@ -18,3 +18,20 @@ Explanation: The array represents the integer 4321.
 Incrementing by one gives 4321 + 1 = 4322.
 Thus, the result should be [4,3,2,2].
 
+class Solution {
+    //Tc: O(n) and Sc:O(n+1) in worst case
+    public int[] plusOne(int[] digits) {
+        int n = digits.length;
+        for (int i = n - 1; i >= 0; i--) {
+            if (digits[i] < 9) {
+                digits[i]++;
+                return digits;
+            } else {
+                digits[i] = 0;
+            }
+        }
+        digits = new int[n+1];
+        digits[0] = 1;
+        return digits;
+    }
+}
