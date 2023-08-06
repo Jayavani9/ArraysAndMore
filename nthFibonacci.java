@@ -18,7 +18,7 @@ Sample Output #2
     
 class Program {
   public static int getNthFib(int n) {
-    // Write your code here.
+    // Tc: O(n) and Sc: O(1)
     if(n==0) return 0;
     else if(n==1) return 0;
     int[] ans= new int[n+1];
