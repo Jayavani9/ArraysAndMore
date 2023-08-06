@@ -9,3 +9,22 @@ key = 2
 Sample Output
 "zab"
     
+class Program {
+  public static String caesarCypherEncryptor(String str, int key) {
+    // Write your code here.
+     StringBuilder result = new StringBuilder();
+
+        for (char ch : str.toCharArray()) {
+            if (Character.isLowerCase(ch)) {
+                int shift = (ch - 'a' + key) % 26; // Calculate the new position after the shift
+                char shiftedChar = (char) ('a' + shift); // Convert the new position back to a character
+                result.append(shiftedChar);
+            } else {
+                // If the character is not lowercase, keep it unchanged
+                result.append(ch);
+            }
+        }
+
+        return result.toString();
+  }
+}
