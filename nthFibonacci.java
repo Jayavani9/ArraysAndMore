@@ -16,3 +16,18 @@ n = 6
 Sample Output #2
 5 // 0, 1, 1, 2, 3, 5
     
+class Program {
+  public static int getNthFib(int n) {
+    // Write your code here.
+    if(n==0) return 0;
+    else if(n==1) return 0;
+    int[] ans= new int[n+1];
+    ans[0] = 0;
+    ans[1] = 1;
+    for(int i = 2; i<= n ; i++)
+    {
+        ans[i] = ans[i-1] + ans[i-2];
+    }
+        return ans[n-1];
+  }
+}
