@@ -11,4 +11,34 @@ targetSum = 0
 Sample Output
 [[-8, 2, 6], [-8, 3, 5], [-6, 1, 5]]
 
-
+class Program {
+  public static List<Integer[]> threeNumberSum(int[] array, int targetSum) {
+    // Write your code here.
+    //
+    Arrays.sort(array);
+    int n = array.length;
+    List<Integer[]> res = new ArrayList<>();
+    for(int i = 0 ; i < n-2; i++)
+    {
+        int j = i + 1; 
+        int k = n-1;
+        while(j<k)
+        {
+            int ans = array[i] + array[j] + array[k];
+            if(ans == targetSum)
+            {
+                Integer[] triplet = {array[i], array[j], array[k]};
+                res.add(triplet);
+            j ++;
+            k --;
+            }
+            else if ( ans < targetSum) 
+            {
+                j++;
+            }
+            else k--;
+        }
+    }
+    return res;
+  }
+}
