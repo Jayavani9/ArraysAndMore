@@ -14,7 +14,7 @@ Sample Output
 class Program {
   public static List<Integer[]> threeNumberSum(int[] array, int targetSum) {
     // Write your code here.
-    //
+    //Tc: O(n^2) and Sc: O(k) where k is the num of triplets
     Arrays.sort(array);
     int n = array.length;
     List<Integer[]> res = new ArrayList<>();
