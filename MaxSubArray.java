@@ -10,3 +10,22 @@ Example 2:
 Input: nums = [1]
 Output: 1
 Explanation: The subarray [1] has the largest sum 1.
+
+//Naive Approach: 
+class Solution {
+  //Tc: O(n^2) Sc: O(1)
+    public int maxSubArray(int[] nums) {
+        int maxim = Integer.MIN_VALUE;
+        for(int i = 0 ; i < nums.length;i++)
+        {
+            int res = 0;
+            for(int j = i ; j < nums.length; j++)
+            {
+
+                res += nums[j];
+                maxim = Math.max(maxim,res);
+            }
+        }
+        return maxim;
+    }
+}
