@@ -24,3 +24,48 @@ The index where nums[i] == 3 is 3.
  
 1 <= nums.length <= 100
 1 <= nums[i], target <= 100
+
+
+
+ Solution : 
+
+Approach 1 : Using Sorting 
+
+ //Tc : O(nlogn) Sc: O(1)
+ Arrays.sort(nums);
+ ArrayList<Integer> ans = new ArrayList<>();
+ for(int i = 0 ; i < nums.length; i++)
+      {
+          if(nums[i] == target)
+           {
+               ans.add(i);
+               
+            }
+        }
+    return ans;
+}
+}
+
+Approach 2 : Using LessTarget and EqualTarget Cnt 
+
+ //Tc: O(n) and Sc: O(1)
+ class Solution {
+    public List<Integer> targetIndices(int[] nums, int target) {
+         int countTarget = 0 , lessTarget = 0;
+        for(int i=0; i<nums.length; i++){
+            if(nums[i]<target) lessTarget++;
+            if(nums[i]==target) countTarget++;
+        }
+        List<Integer> ans = new ArrayList<>();
+        for(int i=0; i<countTarget; i++){
+            ans.add(lessTarget + i);
+        }
+        return ans;
+
+    }
+}
+
+
+
+
+  
