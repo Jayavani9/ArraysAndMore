@@ -21,3 +21,6 @@ Input: nums = [1,2,5,2,3], target = 3
 Output: [3]
 Explanation: After sorting, nums is [1,2,2,3,5].
 The index where nums[i] == 3 is 3.
+ 
+1 <= nums.length <= 100
+1 <= nums[i], target <= 100
