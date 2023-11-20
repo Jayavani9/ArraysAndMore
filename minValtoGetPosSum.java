@@ -59,3 +59,20 @@ class Solution {
     }
 }
 
+
+2. Using Prefix total
+class Solution {
+    //Tc: O(n); Sc: O(1)
+    public int minStartValue(int[] nums) {
+        int minimum = 0;
+        int tot = 0;
+
+        for(int n:nums)
+        {
+            tot += n;
+            minimum = Math.min(minimum, tot);
+
+        }
+
+        return -minimum+1;
+
