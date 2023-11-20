@@ -29,3 +29,33 @@ Example 3:
 Input: nums = [1,-2,-3]
 Output: 5
 
+
+Solutions:
+
+1. Brute force 
+
+class Solution {
+    //Tc: O(n^2 *m) ; Sc: O(1)
+    public int minStartValue(int[] nums) {
+        int startValue = 1;  
+        while (true) {
+            int total = startValue;
+            boolean isValid = true;
+
+            for (int num : nums) {
+                total += num;
+
+                if (total < 1) {
+                    isValid = false;
+                    break;
+                }
+            }
+            if (isValid) {
+                return startValue;
+            } else {
+                startValue += 1;
+            }
+        }
+    }
+}
+
