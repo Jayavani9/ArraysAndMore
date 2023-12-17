@@ -40,3 +40,34 @@ class Solution {
         
     }
 }
+
+class Solution {
+    //Tc: O(n) Sc: O(n)
+    public int maximumSwap(int num) {
+        char[] numChar = Integer.toString(num).toCharArray();
+        int[] lastOccur = new int[10];
+        for(int i = 0 ; i < numChar.length; i++)
+        {
+            lastOccur[numChar[i] - '0'] = i;
+        }
+
+        int i = 0;
+
+        while(i < numChar.length)
+        {
+            for(int d = 9; d > numChar[i] - '0'; d--)
+            {
+                if(lastOccur[d] > i)
+                {
+                    char temp = numChar[i];
+                    numChar[i] = numChar[lastOccur[d]];
+                    numChar[lastOccur[d]] = temp;
+
+                    return Integer.parseInt(new String(numChar));
+                }
+            }
+            i++;
+        }
+ return num;
+    }
+}
