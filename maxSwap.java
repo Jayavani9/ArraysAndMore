@@ -42,7 +42,7 @@ class Solution {
 }
 
 class Solution {
-    //Tc: O(n) Sc: O(n)
+    //Tc: O(n) Sc: O(1)
     public int maximumSwap(int num) {
         char[] numChar = Integer.toString(num).toCharArray();
         int[] lastOccur = new int[10];
