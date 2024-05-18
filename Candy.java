@@ -21,7 +21,7 @@ Explanation: You can allocate to the first, second and third child with 1, 2, 1 
 The third child gets 1 candy because it satisfies the above two conditions.
 */
 
-  //using forward and backward pass
+//using forward and backward pass solution
 class Solution {
     //Tc: O(n) and Sc: O(n)
     public int candy(int[] ratings) {
