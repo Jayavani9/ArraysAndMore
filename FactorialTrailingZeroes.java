@@ -8,6 +8,9 @@ Example 1:
 Input: n = 3
 Output: 0
 Explanation: 3! = 6, no trailing zero.
+
+
+
   
 Example 2:
 Input: n = 5
