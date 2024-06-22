@@ -88,28 +88,28 @@ public class GFG {
 class Solution {
     int getPairsCount(int[] arr, int n, int k) {
         // code here
-        //Tc: O(n) Sc: O(n)
-        HashMap<Integer, Integer> freq = new HashMap<>();
-        int pairCount = 0;
-
-      
-        for (int num : arr) {
-           
-            int complement = k - num;
-          
-            if (freq.containsKey(complement)) {
-                pairCount += freq.get(complement);
+     
+        int cnt = 0;
+        HashMap<Integer, Integer> map = new HashMap<>();
+        
+        for(int i = 0; i < n; i++)
+        {
+            int compl = k - arr[i];
+            
+            if(map.containsKey(compl))
+            {
+                cnt += map.get(compl);
             }
             
-          
-            if (freq.containsKey(num)) {
-                freq.put(num, freq.get(num) + 1);
-            } else {
-                freq.put(num, 1);
+            if(map.containsKey(arr[i]))
+            {
+                map.put(arr[i],map.get(arr[i])+1);
+            }
+            else
+            {
+                map.put(arr[i],1);
             }
         }
-
-        return pairCount;
+        return cnt;
     }
 }
-
