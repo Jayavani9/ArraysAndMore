@@ -27,7 +27,7 @@ Explanation: Here are the steps of the game:
 9) Friend 5 leaves the circle. Only friend 3 is left, so they are the winner.
 
 Solution: 
-  
+// Using Josephus problem
 class Solution {
     public int findTheWinner(int n, int k) {
         //Tc: O(n*k) and Sc: O(n)
