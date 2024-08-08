@@ -46,7 +46,7 @@ class GFG {
 
 // } Driver Code Ends
 
-
+//Using a counter
 
 class Solution {
     public static ArrayList<Integer> duplicates(int[] arr) {
